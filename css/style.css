@@ -1,0 +1,253 @@
+/* body  ================================================= */
+body, html {
+    max-width: 100%;
+    background-color: rgb(15, 15, 15);
+}
+
+/* navbar ================================================= */
+#nav_bar{
+    margin:0.5% 0.5% 0% 0.5% !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+/* content ================================================= */
+
+#row_cont{
+  color:white;
+  background-color: rgb(52, 58, 64);
+  margin:0.5% 0.5% 0% 0.5% !important;
+  border-radius: 20px;
+  padding:0.5%;
+}
+
+#content_index{
+  padding-left:0;
+  padding-right:0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  color:white;
+  background-color: rgb(52, 58, 64);
+  padding: 20px 0;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.box{
+    border-radius: 20px !important;
+}
+
+/*A menü animáció     ================================================= */
+.hoverable{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+    color:white;
+    text-decoration: none;
+  }
+
+  .hoverable:before{
+    position:absolute;
+    pointer-events: none;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+
+  .hoverable:hover, .hoverable:active, .hoverable:focus{
+    transform: translateY(-5px);
+    text-decoration: none;
+    color:white;
+  }
+  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+    text-decoration: none;
+    color:white;
+  }
+
+  nav {
+    background: none !important;
+    text-transform:uppercase;
+  }
+  nav  li {
+      margin-left: 3em;
+      margin-right: 3em;
+      list-style-type: none;
+  }
+    nav li  a{
+        transition: .5s color ease-in-out;
+      }
+
+      /*A menü animáció   vége  */
+
+      /*Footer és elemei ================================================= */
+      footer {
+        position: bottom-fix ;
+        background-color: rgb(52, 58, 64);
+        color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin:0.5% !important;
+        display: block;
+        width:auto;
+        padding:0.5%;
+      }
+
+      /* Ikon szín ================================================= */
+      .fab {
+        color: rgb(255, 253, 253);
+      }
+
+      /*Regisztráció ================================================= */
+      .remove {
+        color: red;
+
+      }
+
+    .ok {
+        color: green;
+
+      }
+
+      #reg{
+        background-color: black;
+      }
+
+    /*log_out================================================= */
+      #logout_btn{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+      }
+
+
+      #user{
+        padding:0;
+      }
+
+      #logo{
+        padding:0;
+      }
+
+      #button_fake {
+        display: block;
+        width: 135px;
+        height: 35px;
+        background: rgb(105, 104, 104);
+        padding-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+        color:white !important;
+        font-weight: bold;
+    }
+
+    /*my_budget style================================================= */
+
+  hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #f8f7f7 inset;
+    width: 90%;
+  }
+
+  .progress{
+    background-color: rgb(187, 187, 187);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #table_res {
+    table-layout: fixed!important;
+    word-wrap: break-word!important;
+    table-layout: fixed;
+  }
+
+  tr{
+    color:white!important;
+  }
+
+  /*Navbar responsive */
+  .offcanvas-header{ display:none; }
+
+  @media (max-width: 1199px) {
+    .offcanvas-header{ display:block; }
+    .navbar-collapse {
+      position: fixed;
+      top:0;
+      bottom: 0;
+      left: 100%;
+      width: 50%;
+      height: 50%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: black;
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(-100%);
+      border: 2px solid #90bade;
+      border-radius: 20px;
+      z-index: 9999;
+    }
+  }
+
+  .navbar-nav{
+    max-height: 10%!important;
+  }
+
+  #ul-list{
+    list-style: none;
+  }
+
+  #gdpr{
+    text-indent: 30%;
+  }
+
+  #date{
+    background-color: black!important;
+  }
+  .col{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Articles */
+  #articles{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
