@@ -1,7 +1,8 @@
-# Szoftverfejlesztő-OKJ-vizsga
+# Software Developer Course Final Exam
 
 OKJ Szakdolgozatom
 
-Feladat: oop elvek betartásával egy webalkalmazás létrehozása, ami elég komplex a vizsgához.
+Task: create a web application that is complex enough for the exam, following oop principles.
 
-A webalkalmazás alapvetően egy pénzügyi jegyzetfüzetként funkcionál, feladata, hogy segítséget nyújtson a felhasználónak, a pénzügyei tisztább átlátásához. Egyszerű kialakítása könnyen kezelhetővé, átláthatóvá teszi. Megadhatjuk kiadásainkat és bevételeinket, feljegyezhetünk 1 spórolási célt, valamint több eseményt is, ami pénzkiadással járhat a közeljövőben.
+The web application is basically a financial notebook, designed to help the user to get a clearer overview of his finances. Its simple design makes it easy to use and transparent. You can enter your expenses and income, note down savings goal, as well as several events that may involve spending money in the near future.
+
